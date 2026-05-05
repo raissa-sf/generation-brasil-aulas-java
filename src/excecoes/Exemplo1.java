@@ -21,20 +21,18 @@ public class Exemplo1 {
 			divisor = ler.nextInt();
 
 			divide(dividendo, divisor);
+			
 		} catch (InputMismatchException e) {
-			
 			System.err.println("\nExceção: " + e);
-			System.out.println("\nDigite valores numéricos!");
+			System.out.println("\nDigite valores númericos!");
+		
 		} catch (ArithmeticException e) {
-			
 			System.err.println("\nExceção: " + e);
-			System.out.println("\nDigite números ineiros e positivos!");
+			System.out.println("\nDigite números inteiros e positivos!");
+		
 		} finally {
 			System.out.println("\nSempre serei executado!");
 		}
-
-		
-
 	}
 
 	public static void divide(int dividendo, int divisor) {
